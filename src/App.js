@@ -1,12 +1,17 @@
-import React from "react";
-import ContainerLayout from "./components/containerLayout";
-import KeyPad from "./components/KeyPad";
+import React, { Suspense } from "react";
+import routes from "./config/routes";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 export default function App() {
   return (
-    <div class="App">
-      <ContainerLayout/>
-      <KeyPad />
-    </div>
+    <>
+      <Router>
+        <Suspense fallback="...loading">
+          {Object.keys(routes).map((routeKey) => (
+            <Route Key={routeKey} {...routes[routeKey]} />
+          ))}
+        </Suspense>
+      </Router>
+    </>
   );
 }

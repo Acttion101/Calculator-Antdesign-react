@@ -1,0 +1,41 @@
+@import '~antd/dist/antd.css';
+
+.button{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 150px;
+    text-align: center;
+    font-size: 50px;
+  padding: 35px;
+  padding-bottom: 60px;
+  border-color:white;
+  background-color: #efeff7;
+  color:black;
+}
+.button1{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 150px;
+    text-align: center;
+    font-size: 50px;
+  padding: 35px;
+  padding-bottom: 60px;
+  border-color:white;
+  background-color: #637d8b;
+  color: white;
+}
+.button2{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 150px;
+    text-align: center;
+    font-size: 50px;
+  padding: 35px;
+  padding-bottom: 60px;
+  border-color:white;
+  background-color:#ff9a01;
+  color: white;
+}

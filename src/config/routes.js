@@ -1,10 +1,15 @@
 import{ lazy } from'react'
 
 const routes = {
-    Home:{
+    MobilePage:{
+        path:'/mobile',
+        exact: true,
+        component:lazy(() => import('../Page/MobilePage'))
+    },
+    WebPage:{
         path:'/',
         exact: true,
-        component:lazy(() => import('../test'))
+        component:lazy(() => import('../Page/WebPage'))
     }
 }
 export default routes;
