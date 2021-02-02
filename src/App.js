@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import routes from "./config/routes";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+
 export default function App() {
   return (
     <>

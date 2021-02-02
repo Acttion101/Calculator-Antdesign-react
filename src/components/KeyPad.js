@@ -6,6 +6,7 @@ import { Row, Col } from "antd";
 
 import styledpage from "../index.css";
 
+
 function KeyPad(onClick, children) {
   const [fristNumumber, setfristNumumber] = useState("");
   const [SecondNumber, setSecindNumumber] = useState("");

@@ -3,6 +3,7 @@ import Result from "./Result";
 import { Button } from "antd";
 import styled from "styled-components";
 import { Row, Col } from "antd";
+import { Link } from "react-router-dom";
 
 import styledpage from "../webpage.css";
 
@@ -48,7 +49,9 @@ function KeyPad(onClick, children) {
   `;
 
   return (
+   
     <Contanier>
+       <Link  to="/mobile">For Mobile Click </Link>
       <ResultBar>
         <div> &nbsp;{fristNumumber} &nbsp;</div>
       </ResultBar>
